@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Join US - Programming Bootcamp</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Programming Bootcamp" name="keywords">
+    <meta content="a Free Programming Bootcamp" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Typing Animation Script -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS from CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* Topbar Fix */
+        #topbar {
+            z-index: 1050; /* Ensures it stays on top */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 40px; /* Adjust as needed */
+        }
+
+        /* Navbar Fix */
+        #navbar {
+            z-index: 1040;
+            margin-top: 40px; /* Pushes navbar down to avoid overlap */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+       body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+        }
+        .form-container {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        .form-control {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+        }
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .form-control:focus {
+            background: rgba(255, 255, 255, 0.3);
+            color: white;
+        }
+        .btn-primary {
+            background: #ffdd57;
+            border: none;
+            color: black;
+            font-weight: bold;
+        }
+        .btn-primary:hover {
+            background: #ffcc00;
+        }
+        .btn-primary:hover {
+            background: #002aff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark fixed-top" id="topbar">
+        <div class="row py-2 px-lg-5">
+            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center text-white">
+                    <small class="px-3">|</small>
+                    <small><a href="mailto:freelance.camp.community@gmail.com" class="text-white"><i class="fa fa-envelope mr-2"></i>freelance.camp.community@gmail.com</a></small>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-white px-2" href="https://www.facebook.com/mokhayamelfreelance">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-white px-2" href="https://www.instagram.com/fl.camp1/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-white px-2" href="https://www.youtube.com/@abdullah.sherdy">
+                        <i class="fab fa-youtube"></i> 
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5 fixed-top" id="navbar">
+            <a href="index.html" class="navbar-brand ml-lg-3">
+                <h1 class="m-0 text-uppercase text-primary">Programming Bootcamp</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mx-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                </div>
+                <a href="joinus.html" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Us</a>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+    <br></br>
+    <br></br>
+    <br></br>
+
+    <!-- Join Us Form -->
+    <div class="container py-5 d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+        <div class="col-md-6 form-container">
+            <h1 class="text-center mb-4">Join Us</h1>
+            <form id="joinForm">
+                <div class="mb-3">
+                    <label class="form-label"><i class="bi bi-person"></i> First Name</label>
+                    <input type="text" name="firstName" class="form-control" required placeholder="Enter your first name">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label"><i class="bi bi-person"></i> Last Name</label>
+                    <input type="text" name="lastName" class="form-control" required placeholder="Enter your last name">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label"><i class="bi bi-envelope"></i> Email</label>
+                    <input type="email" name="email" class="form-control" required placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label"><i class="bi bi-calendar"></i> Age</label>
+                    <input type="number" name="age" class="form-control" required placeholder="Enter your age">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label"><i class="bi bi-phone"></i> Phone Number</label>
+                    <input type="tel" name="phone" class="form-control" required placeholder="Enter your phone number">
+                </div>
+                <button type="submit" class="btn btn-primary w-100"><i class="bi bi-send"></i> Submit</button>
+            </form>
+        </div>
+    </div>
+    <!-- Join us end -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5" style="margin-top: 90px;">
+        <div class="container mt-5 pt-5">
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="mt-n2 text-uppercase text-white">Programming Bootcamp</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-5">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <small><a href="mailto:freelance.camp.community@gmail.com" class="text-white"><i class="fa fa-envelope mr-2"></i>freelance.camp.community@gmail.com</a></small>
+                    <div class="d-flex justify-content-start mt-4">
+                        <a class="text-white px-2" href="https://www.facebook.com/mokhayamelfreelance">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-white px-2" href="https://www.instagram.com/fl.camp1/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-white px-2" href="https://www.youtube.com/@abdullah.sherdy">
+                            <i class="fab fa-youtube"></i> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white-50 border-top py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                    <p class="m-0">Copyright &copy; <a class="text-white" href="#">Programming Bootacamp</a>. All Rights Reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <p class="m-0">Designed by <a class="text-white" href="https://linkedin.com/in/abdullah-sherdy">Abdullah Sherdy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById("joinForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            formData.append("formType", "joinUs");
+            fetch("https://script.google.com/macros/s/YOUR_GOOGLE_SCRIPT_ID/exec", {
+                method: "POST",
+                body: formData
+            }).then(response => alert("Registered Sucessfully Successfully!"))
+            .catch(error => console.error("Error!", error));
+        });
+    </script>
+</body>
+</html>

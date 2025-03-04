@@ -15,6 +15,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
 
+    <!-- Typing Animation Script -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
@@ -69,7 +72,7 @@
                     <a href="index.html" class="nav-item nav-link active">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
                 </div>
-                <a href="https://abdullahsherdy.github.io/m5ym-al-freelance/" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Us</a>
+                <a href="joinus.html" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Us</a>
             </div>
         </nav>
     </div>
@@ -92,13 +95,22 @@
             margin-top: 40px; /* Pushes navbar down to avoid overlap */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+        .btn-primary {
+            background: #ffdd57;
+            border: none;
+            color: black;
+            font-weight: bold;
+        }
+        .btn-primary:hover {
+            background: #0059ff;
+        }
     </style>
-
-
+    <br></br>
+    <br></br>
     <!-- Header Start -->
     <div class="jumbotron jumbotron-fluid position-relative overlay-bottom" style="margin-bottom: 90px;">
         <div class="container text-center my-5 py-5">
-            <h1 class="text-white mt-4 mb-4">Programming isn’t about writing code; it’s about learning how to think.</h1>
+            <h1 class="text-white mt-4 mb-4"><span id="typed-text"></span></h1>
             <div class="mx-auto mb-5" style="width: 100%; max-width: 600px;">
                 <div class="input-group">
                     <!-- <div class="input-group-prepend">
@@ -119,7 +131,6 @@
         </div>
     </div>
     <!-- Header End -->
-
 
     <!-- About Start -->
     <div class="container-fluid py-5">
@@ -179,14 +190,14 @@
                             <td><a href="https://www.youtube.com/watch?" target="_blank" class="btn btn-sm btn-outline-primary">Watch Video</a></td>
                             <td><a href="https://drive.google.com/file/d/your-pdf-id/view" target="_blank" class="btn btn-sm btn-outline-success">Download PDF</a></td>
                             <td><a href="https://drive.google.com/file/d/your-sheet-id/view" target="_blank" class="btn btn-sm btn-outline-warning">Download Sheet</a></td>
-                            <td><a href="https://forms.gle/qZkPqk7kqUwnCQMf9" target="_blank" class="btn btn-sm btn-primary">Submit</a></td>
+                            <td><a href="submitsheet.html" target="_blank" class="btn btn-sm btn-primary">Submit Sheet</a></td>
                         </tr>
                         <tr>
                             <td>Session 2</td>
                             <td><a href="https://www.youtube.com/watch?" target="_blank" class="btn btn-sm btn-outline-primary">Watch Video</a></td>
                             <td><a href="https://drive.google.com/file/d/your-pdf-id/view" target="_blank" class="btn btn-sm btn-outline-success">Download PDF</a></td>
                             <td><a href="https://drive.google.com/file/d/your-sheet-id/view" target="_blank" class="btn btn-sm btn-outline-warning">Download Sheet</a></td>
-                            <td><a href="https://forms.gle/qZkPqk7kqUwnCQMf9" target="_blank" class="btn btn-sm btn-primary">Submit</a></td>
+                            <td><a href="submitsheet.html" target="_blank" class="btn btn-sm btn-primary">Submit Sheet</a></td>
                         </tr>
                         <!-- Add more sessions as needed -->
                     </tbody>
@@ -208,7 +219,7 @@
                 <div class="team-item">
                     <img class="img-fluid w-100" src="img/abdullah.jpg" alt="">
                     <div class="bg-light text-center p-4">
-                        <h5 class="mb-3">Instructor Name</h5>
+                        <h5 class="mb-3">Abdullah Sherdy</h5>
                         <p class="mb-2">Coding Instructor & Jr.Software Engineer</p>
                         <div class="d-flex justify-content-center">
                             <a class="mx-1 p-1" href="https://linkedin.com/in/abdullah-sherdy"><i class="fab fa-linkedin-in"></i></a>
@@ -224,11 +235,23 @@
                     <img class="img-fluid w-100" src="img/sara_vector.jpeg" alt="">
                     <div class="bg-light text-center p-4">
                         <h5 class="mb-3">Sara Yasser</h5>
-                        <p class="mb-2">AI Engineer</p>
+                        <p class="mb-2">AI Engineer&Teaching Assistant</p>
                         <div class="d-flex justify-content-center">
                             <a class="mx-1 p-1" href="https://www.linkedin.com/in/sara-yasser-39a023354"><i class="fab fa-linkedin-in"></i></a>
                             <a class="mx-1 p-1" href="#"><i class="fab fa-github"></i></a>
                         </div>
+                    </div>
+                </div>
+
+                <div class="team-item">
+                    <img class="img-fluid w-100" src="img/yasser.jpg" alt="">
+                    <div class="bg-light text-center p-4">
+                        <h5 class="mb-3">Yasser Hall</h5>
+                        <p class="mb-2">Mentor</p>
+                        <!-- <div class="d-flex justify-content-center">
+                            <a class="mx-1 p-1" href="https://www.linkedin.com/in/sara-yasser-39a023354"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-github"></i></a>
+                        </div> -->
                     </div>
                 </div>
 
@@ -289,7 +312,7 @@
     <a href="#" class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 
-    <!-- JavaScript Libraries -->
+   <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
@@ -297,8 +320,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
+    <!-- Typed.js for Live Typing Effect -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var typed = new Typed("#typed-text", {
+                strings: [
+                    "Programming isn’t about writing code; it’s about learning how to think.",
+                    "Join Freelance Camp's Programming Course!",
+                    "Master problem-solving and coding skills."
+                ],
+                typeSpeed: 80,   // Typing speed (milliseconds per character)
+                backSpeed: 40,   // Backspacing speed
+                startDelay: 400, // Delay before typing starts
+                backDelay: 2000, // Delay before backspacing
+                loop: true       // Infinite loop
+            });
+        });
+    </script>
+
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
 </body>
 
 </html>

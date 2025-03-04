@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>About Us - Programming Bootcamp</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="About Programming Bootcamp" name="keywords">
+    <meta content="Learn about our programming bootcamp" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS from CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-dark fixed-top" id="topbar">
+            <div class="row py-2 px-lg-5">
+                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center text-white">
+                        <small class="px-3">|</small>
+                        <small><a href="mailto:freelance.camp.community@gmail.com" class="text-white"><i class="fa fa-envelope mr-2"></i>freelance.camp.community@gmail.com</a></small>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-white px-2" href="https://www.facebook.com/mokhayamelfreelance">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-white px-2" href="https://www.instagram.com/fl.camp1/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-white px-2" href="https://www.youtube.com/@abdullah.sherdy">
+                            <i class="fab fa-youtube"></i> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+    
+        <!-- Navbar Start -->
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5 fixed-top" id="navbar">
+                <a href="index.html" class="navbar-brand ml-lg-3">
+                    <h1 class="m-0 text-uppercase text-primary">Programming Bootcamp</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                    </div>
+                    <a href="joinus.html" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Us</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar End -->
+    
+        <style>
+
+            /* Topbar Fix */
+            #topbar {
+                z-index: 1050; /* Ensures it stays on top */
+                position: fixed;
+                width: 100%;
+                top: 0;
+                left: 0;
+                height: 40px; /* Adjust as needed */
+            }
+    
+            /* Navbar Fix */
+            #navbar {
+                z-index: 1040;
+                margin-top: 40px; /* Pushes navbar down to avoid overlap */
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            .btn-primary {
+            background: #ffdd57;
+            border: none;
+            color: black;
+            font-weight: bold;
+            }
+           .btn-primary:hover {
+            background: #0059ff;
+           }
+        </style>
+
+        
+        <br></br>
+        <br></br>
+               
+    <!-- About Section Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative mb-5">
+                <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2" id="typed-subtitle"></h6>
+                <h1 class="display-4" id="typed-title"></h1>
+            </div>
+            <p class="text-center" id="typed-intro"></p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="text-secondary" id="typed-offer-title"></h3>
+                    <ul>
+                        <li id="typed-offer-1"></li>
+                        <li id="typed-offer-2"></li>
+                        <li id="typed-offer-3"></li>
+                        <li id="typed-offer-4"></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="text-secondary" id="typed-instructor-title"></h3>
+                    <p id="typed-instructor-text"></p>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <h3 class="text-secondary" id="typed-join-title"></h3>
+                <p id="typed-join-text"></p>
+            </div>
+        </div>
+    </div>
+    <!-- About Section End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5" style="margin-top: 90px;">
+        <div class="container mt-5 pt-5">
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="mt-n2 text-uppercase text-white">Programming Bootcamp</h1>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-5">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <small><a href="mailto:freelance.camp.community@gmail.com" class="text-white"><i class="fa fa-envelope mr-2"></i>freelance.camp.community@gmail.com</a></small>
+                    <div class="d-flex justify-content-start mt-4">
+                        <a class="text-white px-2" href="https://www.facebook.com/mokhayamelfreelance">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-white px-2" href="https://www.instagram.com/fl.camp1/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-white px-2" href="https://www.youtube.com/@abdullah.sherdy">
+                            <i class="fab fa-youtube"></i> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white-50 border-top py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                    <p class="m-0">Copyright &copy; <a class="text-white" href="#">Programming Bootacamp</a>. All Rights Reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <p class="m-0">Designed by <a class="text-white" href="https://linkedin.com/in/abdullah-sherdy">Abdullah Sherdy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Typed.js for Live Typing Effect -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // new Typed("#typed-text", {
+            //     strings: [
+            //         "Programming isn’t about writing code; it’s about learning how to think.",
+            //         "Join Freelance Camp's Programming Course!",
+            //         "Master problem-solving and coding skills."
+            //     ],
+            //     typeSpeed: 80,   // Typing speed (milliseconds per character)
+            //     backSpeed: 40,   // Backspacing speed
+            //     startDelay: 400, // Delay before typing starts
+            //     backDelay: 2000, // Delay before backspacing
+            //     loop: true       // Infinite loop
+            // });
+            new Typed("#typed-subtitle", {
+                strings: ["About Us"],
+                typeSpeed: 50,
+                showCursor: false
+            });
+            new Typed("#typed-title", {
+                strings: ["Programming Bootcamp"],
+                typeSpeed: 50,
+                showCursor: false
+            });
+            new Typed("#typed-intro", {
+                strings: ["At Freelance Camp Community, we believe that learning to code is more than just writing syntax—it’s about developing problem-solving skills, logical thinking, and creativity. This course is designed to take students from absolute beginners to confident programmers, equipping them with the knowledge and hands-on experience to build real-world applications."],
+                typeSpeed: 30,
+                showCursor: false
+            });
+            new Typed("#typed-offer-title", {
+                strings: ["📌 What We Offer"],
+                typeSpeed: 50,
+                showCursor: false
+            });
+            new Typed("#typed-offer-1", {
+                strings: ["✅ Structured learning covering fundamentals, data structures, algorithms, and OOP."],
+                typeSpeed: 30,
+                showCursor: false
+            });
+            new Typed("#typed-offer-2", {
+                strings: ["✅ Hands-on practice with coding challenges and real-world applications."],
+                typeSpeed: 30,
+                showCursor: false
+            });
+            new Typed("#typed-offer-3", {
+                strings: ["✅ A supportive and engaging community."],
+                typeSpeed: 30,
+                showCursor: false
+            });
+            new Typed("#typed-offer-4", {
+                strings: ["✅ Focus on debugging, problem-solving, and writing clean, efficient code."],
+                typeSpeed: 30,
+                showCursor: false
+            });
+            
+            new Typed("#typed-join-title", {
+                strings: ["🌍 Join Us & Start Your Coding Journey!"],
+                typeSpeed: 50,
+                showCursor: false
+            });
+            new Typed("#typed-join-text", {
+                strings: ["Whether you're looking to kickstart a programming career or just explore coding, this course is your gateway to success."],
+                typeSpeed: 30,
+                showCursor: false
+            });
+        });
+    </script>
+</body>
+</html>
