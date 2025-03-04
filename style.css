@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000033;
+    padding: 15px 20px;
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: #00b2c8;
+    color: white;
+}
+
+/* Sections */
+section {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #000099;
+    text-align: center;
+}
+
+/* Syllabus Sessions */
+.session {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+.session h3 {
+    margin: 0;
+    color: #00b2c8;
+}
+
+.session a {
+    display: inline-block;
+    margin: 5px 10px 0 0;
+    padding: 5px 10px;
+    background: #000099;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.session a:hover {
+    background: #000033;
+}
+
+/* About Page - Instructor Cards */
+.instructor-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.instructor-card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.instructor-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.instructor-card h3 {
+    color: #000033;
+    margin: 10px 0 5px;
+}
+
+.instructor-card p {
+    font-size: 14px;
+    color: #333;
+}
+
+.instructor-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #00b2c8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.instructor-card a:hover {
+    background: #000099;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000033;
+    color: white;
+    margin-top: 20px;
+}

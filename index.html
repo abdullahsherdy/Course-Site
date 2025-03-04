@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Programming Bootcamp</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Programming Bootcamp" name="keywords">
+    <meta content="a Free Programming Bootcamp" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS from CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark fixed-top" id="topbar">
+        <div class="row py-2 px-lg-5">
+            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center text-white">
+                    <small class="px-3">|</small>
+                    <small><a href="mailto:freelance.camp.community@gmail.com" class="text-white"><i class="fa fa-envelope mr-2"></i>freelance.camp.community@gmail.com</a></small>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-white px-2" href="https://www.facebook.com/mokhayamelfreelance">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-white px-2" href="https://www.instagram.com/fl.camp1/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-white px-2" href="https://www.youtube.com/@abdullah.sherdy">
+                        <i class="fab fa-youtube"></i> 
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5 fixed-top" id="navbar">
+            <a href="index.html" class="navbar-brand ml-lg-3">
+                <h1 class="m-0 text-uppercase text-primary">Programming Bootcamp</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mx-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                </div>
+                <a href="https://abdullahsherdy.github.io/m5ym-al-freelance/" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Us</a>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <style>
+        /* Topbar Fix */
+        #topbar {
+            z-index: 1050; /* Ensures it stays on top */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 40px; /* Adjust as needed */
+        }
+
+        /* Navbar Fix */
+        #navbar {
+            z-index: 1040;
+            margin-top: 40px; /* Pushes navbar down to avoid overlap */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+
+
+    <!-- Header Start -->
+    <div class="jumbotron jumbotron-fluid position-relative overlay-bottom" style="margin-bottom: 90px;">
+        <div class="container text-center my-5 py-5">
+            <h1 class="text-white mt-4 mb-4">Programming isn’t about writing code; it’s about learning how to think.</h1>
+            <div class="mx-auto mb-5" style="width: 100%; max-width: 600px;">
+                <div class="input-group">
+                    <!-- <div class="input-group-prepend">
+                        <button class="btn btn-outline-light bg-white text-body px-4 dropdown-toggle" type="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Courses</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Courses 1</a>
+                            <a class="dropdown-item" href="#">Courses 2</a>
+                            <a class="dropdown-item" href="#">Courses 3</a>
+                        </div>
+                    </div>
+                    <input type="text" class="form-control border-light" style="padding: 30px 25px;" placeholder="Keyword">
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary px-4 px-lg-5">Search</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="section-title position-relative mb-4">
+                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">About Us</h6>
+                        <h1 class="display-4"></h1>
+                    </div>
+                    <div class="row pt-3 mx-0">
+                        <div class="col-3 px-0">
+                            <div class="bg-primary text-center p-4">
+                                <h1 class="text-white" data-toggle="counter-up">1</h1>
+                                <h6 class="text-uppercase text-white">Available<span class="d-block">Courses</span></h6>
+                            </div>
+                        </div>
+                        <div class="col-3 px-0">
+                            <div class="bg-secondary text-center p-4">
+                                <h1 class="text-white" data-toggle="counter-up">2</h1>
+                                <h6 class="text-uppercase text-white">Our Instructors</h6>
+                            </div>
+                        </div>
+                        <div class="col-3 px-0">
+                            <div class="bg-warning text-center p-4">
+                                <h1 class="text-white" data-toggle="counter-up">37</h1>
+                                <h6 class="text-uppercase text-white">Enrolled<span class="d-block">Students</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Course Material Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative mb-5">
+                <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Course Material</h6>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover table-bordered text-center">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Session</th>
+                            <th>Session Video</th>
+                            <th>Session PDF</th>
+                            <th>Session Sheet</th>
+                            <th>Submit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Session 1</td>
+                            <td><a href="https://www.youtube.com/watch?" target="_blank" class="btn btn-sm btn-outline-primary">Watch Video</a></td>
+                            <td><a href="https://drive.google.com/file/d/your-pdf-id/view" target="_blank" class="btn btn-sm btn-outline-success">Download PDF</a></td>
+                            <td><a href="https://drive.google.com/file/d/your-sheet-id/view" target="_blank" class="btn btn-sm btn-outline-warning">Download Sheet</a></td>
+                            <td><a href="https://forms.gle/qZkPqk7kqUwnCQMf9" target="_blank" class="btn btn-sm btn-primary">Submit</a></td>
+                        </tr>
+                        <tr>
+                            <td>Session 2</td>
+                            <td><a href="https://www.youtube.com/watch?" target="_blank" class="btn btn-sm btn-outline-primary">Watch Video</a></td>
+                            <td><a href="https://drive.google.com/file/d/your-pdf-id/view" target="_blank" class="btn btn-sm btn-outline-success">Download PDF</a></td>
+                            <td><a href="https://drive.google.com/file/d/your-sheet-id/view" target="_blank" class="btn btn-sm btn-outline-warning">Download Sheet</a></td>
+                            <td><a href="https://forms.gle/qZkPqk7kqUwnCQMf9" target="_blank" class="btn btn-sm btn-primary">Submit</a></td>
+                        </tr>
+                        <!-- Add more sessions as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>    
+    <!-- Course Material End -->           
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative mb-5">
+                <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Instructors</h6>
+                <h1 class="display-4">Meet Our Instructors</h1>
+            </div>
+            <div class="owl-carousel team-carousel position-relative" style="padding: 0 30px;">
+                
+                <div class="team-item">
+                    <img class="img-fluid w-100" src="img/abdullah.jpg" alt="">
+                    <div class="bg-light text-center p-4">
+                        <h5 class="mb-3">Instructor Name</h5>
+                        <p class="mb-2">Coding Instructor & Jr.Software Engineer</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="mx-1 p-1" href="https://linkedin.com/in/abdullah-sherdy"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="mx-1 p-1" href="https://github.com/abdullahsherdy"><i class="fab fa-github"></i></a>
+                            <a class="mx-1 p-1" href="https://www.facebook.com/profile.php?id=100038535590675"><i class="fab fa-facebook-f"></i></a>
+                            <a class="mx-1 p-1" href="https://www.instagram.com/abdullah.sherdy"><i class="fab fa-instagram"></i></a>
+                            <a class="mx-1 p-1" href="https://www.youtube.com/@abdullah.sherdy"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="team-item">
+                    <img class="img-fluid w-100" src="img/sara_vector.jpeg" alt="">
+                    <div class="bg-light text-center p-4">
+                        <h5 class="mb-3">Sara Yasser</h5>
+                        <p class="mb-2">AI Engineer</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="mx-1 p-1" href="https://www.linkedin.com/in/sara-yasser-39a023354"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5" style="margin-top: 90px;">
+        <div class="container mt-5 pt-5">
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="mt-n2 text-uppercase text-white">Programming Bootcamp</h1>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-5">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <small><a href="mailto:freelance.camp.community@gmail.com" class="text-white"><i class="fa fa-envelope mr-2"></i>freelance.camp.community@gmail.com</a></small>
+                    <div class="d-flex justify-content-start mt-4">
+                        <a class="text-white px-2" href="https://www.facebook.com/mokhayamelfreelance">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-white px-2" href="https://www.instagram.com/fl.camp1/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-white px-2" href="https://www.youtube.com/@abdullah.sherdy">
+                            <i class="fab fa-youtube"></i> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white-50 border-top py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                    <p class="m-0">Copyright &copy; <a class="text-white" href="#">Programming Bootacamp</a>. All Rights Reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <p class="m-0">Designed by <a class="text-white" href="https://linkedin.com/in/abdullah-sherdy">Abdullah Sherdy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
