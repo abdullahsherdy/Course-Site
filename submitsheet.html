@@ -111,7 +111,7 @@
     <div class="container py-5 d-flex justify-content-center align-items-center" style="min-height: 100vh;">
         <div class="col-md-6 form-container">
             <h1 class="text-center mb-4">Submit Your Work</h1>
-            <form id="sheetForm" enctype="multipart/form-data">
+            <form id="sheetForm" enctype="multipart/form-data" method="post">
                 <div class="mb-3">
                     <label class="form-label"><i class="bi bi-person"></i> Your Name</label>
                     <input type="text" name="name" class="form-control" required placeholder="Enter your name">
@@ -159,27 +159,31 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script>
-        document.getElementById("sheetForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent default form submission
-            const form = this;
-            const formData = new FormData(form);
-            formData.append("formType", "sheetSubmission");
-    
-            fetch("", {
-                method: "POST",
-                body: formData
-            }).then(response => {
-                if (response.ok) {
-                    alert("✅ Sheet Submitted Successfully!");
-                    form.reset(); // Clear all input fields
-                } else {
-                    alert("❌ Submission Failed. Please try again.");
-                }
-            }).catch(error => {
-                console.error("Error!", error);
-                alert("❌ An error occurred. Please check your connection.");
-            });
-        });
+       document.getElementById("sheetForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const form = this;
+    const formData = new FormData(form);
+    formData.append("formType", "sheetSubmission");
+
+    fetch("https://script.google.com/macros/s/AKfycby5YguaCMVU7-gdyOgzLZfcrf19qsmQsfHw2YyROIlEkGjeDk5WjCB6OYsHlwrWkkAI/exec", {
+        method: "POST",
+        body: formData
+    }).then(response => response.text())
+      .then(data => {
+          console.log("Server Response:", data); // Debugging
+          if (data.includes("Success")) {
+              alert("✅ Sheet Submitted Successfully!");
+              form.reset();
+          } else {
+              alert("❌ Submission Failed: " + data);
+          }
+      }).catch(error => {
+          console.error("Error!", error);
+          alert("❌ Connection Error. Check the console for details.");
+      });
+});
+
     </script>
 </body>
 </html>
