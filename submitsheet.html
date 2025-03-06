@@ -122,7 +122,7 @@
                 </div>
                 <div class="mb-3">
                     <label class="form-label"><i class="bi bi-list-check"></i> Select Sheet Number(s)</label>
-                    <select name="sheets[]" class="form-control" multiple required>
+                    <select name="sheet" class="form-control" required>
                         <option value="1">Sheet 1</option>
                         <option value="2">Sheet 2</option>
                         <option value="3">Sheet 3</option>
@@ -159,19 +159,18 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script>
-       document.getElementById("sheetForm").addEventListener("submit", function(event) {
+    document.getElementById("sheetForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
     const form = this;
     const formData = new FormData(form);
-    formData.append("formType", "sheetSubmission");
-
-    fetch("https://script.google.com/macros/s/AKfycby5YguaCMVU7-gdyOgzLZfcrf19qsmQsfHw2YyROIlEkGjeDk5WjCB6OYsHlwrWkkAI/exec", {
+    
+    fetch("https://script.google.com/macros/s/AKfycbycRUv9zVwWTSrzqZUIVaycIRb8H6CMXGbcJRZIx2BSWmsdnUxwUxspSpftbKVG4GBu/exec", {
         method: "POST",
         body: formData
     }).then(response => response.text())
       .then(data => {
-          console.log("Server Response:", data); // Debugging
+          console.log("Server Response:", data);
           if (data.includes("Success")) {
               alert("✅ Sheet Submitted Successfully!");
               form.reset();
