@@ -30,7 +30,57 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
+<style>
+        canvas {
+        max-width: 150px;
+        max-height: 150px;
+        margin: auto;
+        display: block;
+        position: relative;
+        }
 
+        /* Topbar Fix */
+        #topbar {
+            z-index: 1050; /* Ensures it stays on top */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 40px; /* Adjust as needed */
+        }
+        /* Navbar Fix */
+        #navbar {
+            z-index: 1040;
+            margin-top: 40px; /* Pushes navbar down to avoid overlap */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background: #ffdd57;
+            border: none;
+            color: black;
+            font-weight: bold;
+        }
+        .btn-primary:hover {
+            background: #0059ff;
+        }
+        .progress-container {
+        width: 100%;
+        background: #222;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 20px;
+        }
+
+        .progress-bar {
+            width: 0%;
+            height: 20px;
+            background: linear-gradient(90deg, #00f, #0ff);
+            box-shadow: 0 0 10px #00f, 0 0 20px #0ff;
+            border-radius: 10px;
+            transition: width 1s ease-in-out;
+        }
+
+    </style>
 <body>
     <!-- Topbar Start -->
     <div class="container-fluid bg-dark fixed-top" id="topbar">
@@ -71,44 +121,21 @@
                 <div class="navbar-nav mx-auto py-0">
                     <a href="index.html" class="nav-item nav-link active">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="login.html" class="nav-item nav-link">Login</a> <!-- because in mobile the button is invisable -->
-                    <a href="signup.html" class="nav-item nav-link">Signup</a> <!-- because in mobile the button is invisable -->
-                </div>
-                <a href="login.html" class="btn btn-primary py-2 px-4">Login</a>
+                    <!-- <a href="login.html" class="nav-item nav-link">Login</a>  because in mobile the button is invisable 
+                    <a href="signup.html" class="nav-item nav-link">Signup</a>  because in mobile the button is invisable -->
+                </div> 
+                <a href="joinus.html" class="btn btn-primary py-2 px-4">Join US</a>
             </div>
         </nav>
     </div>
     <!-- Navbar End -->
 
-    <style>
-        /* Topbar Fix */
-        #topbar {
-            z-index: 1050; /* Ensures it stays on top */
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            height: 40px; /* Adjust as needed */
-        }
+  
 
-        /* Navbar Fix */
-        #navbar {
-            z-index: 1040;
-            margin-top: 40px; /* Pushes navbar down to avoid overlap */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .btn-primary {
-            background: #ffdd57;
-            border: none;
-            color: black;
-            font-weight: bold;
-        }
-        .btn-primary:hover {
-            background: #0059ff;
-        }
-    </style>
+
     <br></br>
     <br></br>
+
     <!-- Header Start -->
     <div class="jumbotron jumbotron-fluid position-relative overlay-bottom" style="margin-bottom: 90px;">
         <div class="container text-center my-5 py-5">
@@ -134,40 +161,23 @@
     </div>
     <!-- Header End -->
 
-    <!-- About Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="section-title position-relative mb-4">
-                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">About Us</h6>
-                        <h1 class="display-4"></h1>
-                    </div>
-                    <div class="row pt-3 mx-0">
-                        <div class="col-3 px-0">
-                            <div class="bg-primary text-center p-4">
-                                <h1 class="text-white" data-toggle="counter-up">1</h1>
-                                <h6 class="text-uppercase text-white">Available<span class="d-block">Courses</span></h6>
-                            </div>
-                        </div>
-                        <div class="col-3 px-0">
-                            <div class="bg-secondary text-center p-4">
-                                <h1 class="text-white" data-toggle="counter-up">2</h1>
-                                <h6 class="text-uppercase text-white">Our Instructors</h6>
-                            </div>
-                        </div>
-                        <div class="col-3 px-0">
-                            <div class="bg-warning text-center p-4">
-                                <h1 class="text-white" data-toggle="counter-up">37</h1>
-                                <h6 class="text-uppercase text-white">Enrolled<span class="d-block">Students</span></h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!--  -->
+    <section id="success-metrics" class="container mt-5">
+        <h2 class="text-center">Success Metrics</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <canvas id="progress-courses"></canvas>
+            </div>
+            <div class="col-md-4">
+                <canvas id="progress-instructors"></canvas>
+            </div>
+            <div class="col-md-4">
+                <canvas id="progress-students"></canvas>
             </div>
         </div>
-    </div>
-    <!-- About End -->
+    </section>
+    
+    <!--   -->
 
     <!-- Course Material Start -->
     <div class="container-fluid py-5">
@@ -189,7 +199,7 @@
                     <tbody>
                         <tr>
                             <td>Session 1</td>
-                            <td><a href="https://www.youtube.com/watch?" target="_blank" class="btn btn-sm btn-outline-primary">Watch Video</a></td>
+                            <td><a href="https://youtu.be/Vc1Y3rk5qFs?si=jKVhMsN-yRE1jzgK" target="_blank" class="btn btn-sm btn-outline-primary">Watch Video</a></td>
                             <td><a href="https://drive.google.com/file/d/your-pdf-id/view" target="_blank" class="btn btn-sm btn-outline-success">Download PDF</a></td>
                             <td><a href="https://drive.google.com/file/d/your-sheet-id/view" target="_blank" class="btn btn-sm btn-outline-warning">Download Sheet</a></td>
                             <td><a href="submitsheet.html" target="_blank" class="btn btn-sm btn-primary">Submit Sheet</a></td>
@@ -216,8 +226,7 @@
                 <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Instructors</h6>
                 <h1 class="display-4">Meet Our Instructors</h1>
             </div>
-            <div class="owl-carousel team-carousel position-relative" style="padding: 0 30px;">
-                
+            <div class="owl-carousel team-carousel position-relative" style="padding: 0 30px;">     
                 <div class="team-item">
                     <img class="img-fluid w-100" src="img/abdullah.jpg" alt="">
                     <div class="bg-light text-center p-4">
@@ -321,11 +330,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Typed.js for Live Typing Effect -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <script>
+        // Text Typing Animation
         document.addEventListener("DOMContentLoaded", function() {
             var typed = new Typed("#typed-text", {
                 strings: [
@@ -340,6 +350,69 @@
                 loop: true       // Infinite loop
             });
         });
+
+        /// progrss bars 
+        document.addEventListener("DOMContentLoaded", function() {
+        Chart.register({
+            id: "centerText",
+            beforeDraw(chart) {
+            let { width, height } = chart;
+            let ctx = chart.ctx;
+            ctx.restore();
+            let fontSize = (height / 8).toFixed(2);
+            ctx.font = `bold ${fontSize}px sans-serif`;  // **Bold text**
+            ctx.textBaseline = "middle";
+            ctx.textAlign = "center";
+            ctx.fillStyle = "#000";  // **Black text for better visibility**
+
+            let text = chart.canvas.id.replace("progress-", "").replace("-", " ");
+            let textX = width / 2;
+            let textY = height / 2;
+            ctx.fillText(text, textX, textY);
+
+            ctx.save();
+            }
+        });
+
+        function createCircularProgress(id, value, maxValue, color) {
+            let ctx = document.getElementById(id).getContext("2d");
+            new Chart(ctx, {
+            type: "doughnut",
+            data: {
+                datasets: [{
+                data: [value, maxValue - value],
+                backgroundColor: [color, "#e0e0e0"],
+                borderWidth: 0
+                }]
+            },
+            options: {
+                cutout: "65%", // Adjusts thickness
+                responsive: false,
+                maintainAspectRatio: false,
+                plugins: {
+                tooltip: { enabled: false },
+                legend: { display: false },
+                centerText: {
+                    text: `${value}`
+                }
+                }
+            }
+            });
+            // Display count below the metric name
+            let metricName = id.replace("progress-", "").replace("-", " ");
+            let countText = document.createElement("div");
+            countText.style.textAlign = "center";
+            countText.style.marginTop = "10px";
+            countText.innerHTML = `<strong>${metricName}</strong><br><strong>${value}</strong>`;
+            document.getElementById(id).parentNode.appendChild(countText);
+        }
+
+        createCircularProgress("progress-courses", 1, 10, "#00f");  // Active courses
+        createCircularProgress("progress-instructors", 5, 10, "#0f0");  // Instructors
+        createCircularProgress("progress-students", 37, 50, "#ff0");  // Students
+        });
+
+
     </script>
 
     <!-- Template Javascript -->
